@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <% if (user == 'guest') { %>
+    <%} else if (user == 'null') { %>
+    <p> email이 존재하지 않습니다. </p>
+    <span>가입하시겠습니까? <a href="/register"><button type="button">가입</button></a></span>
+    <%} else {%>
+      <p>비밀번호가 일치하지 않습니다.</p>
+    <% } %>
+    <form action="/login" method="post" class="form-example">
+   
+      <div class="form-example">
+        <label for="email">email: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div class="form-example">
+        <label for="email">password: </label>
+        <input type="password" name="password" id="email" required />
+      </div>
+      <div class="form-example">
+        <input type="submit" value="Subscribe!" />
+      </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Main Page</h1>
+    <a href="/logout"><button type = "button">로그아웃</button></a>
+    <% if(name){ %>
+        <h2>Welcome! <%= name %>님</h2>
+    <% }else{ %>
+        <h3>안녕하세요 GUEST님</h3>
+    <% } %>
+</body>
+</html>
